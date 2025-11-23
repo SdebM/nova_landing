@@ -35,7 +35,7 @@
 							Чистая семантическая разметка, современный CSS, адаптив,
 							аккуратная типографика и наглядная структура.
 						</p>
-						<div class="hero_actions">
+						<div class="hero__actions">
 							<a href="#" class="btn btn--primary">Начать практику</a>
 							<a href="#" class="btn btn--ghost">Посмотреть структуру</a>
 						</div>
@@ -115,27 +115,27 @@
 			</section>
 			<!--ABOUT-->
 			<section class="section" id="about">
-				<div class="container__about">
-					<h2 class="section__title">Этот лендинг как учебный стенд</h2>
-					<p class="section__subtitle">
-						Ты можешь отрывать исходники, менять отступы цвета, шрифты, сетки -
-						и сразу видеть результат. Это идеальный "Песочница проект" для
-						экспериментов в CSS.
-					</p>
-					<ul class="list">
-						<li>Чистый, читаемый HTML + внешний CSS файл</li>
-						<li>
-							Универсальное правило
-							<code>*&#123; box-sizing:border-box; &#125;</code>
-						</li>
-						<li>
-							Аккуратные <code>padding</code>, <code>margin</code>,
-							<code>border-radius</code>, <code>box-shadow</code>
-						</li>
-						<li>Лаконичная палитра и базовая типографика</li>
-					</ul>
-				</div>
-				<div>
+				<div class="container about">
+					<div class="about__content">
+						<h2 class="section__title">Этот лендинг как учебный стенд</h2>
+						<p class="section__subtitle">
+							Ты можешь отрывать исходники, менять отступы цвета, шрифты, сетки
+							- и сразу видеть результат. Это идеальный "Песочница-проект" для
+							экспериментов в CSS.
+						</p>
+						<ul class="list">
+							<li>Чистый, читаемый HTML + внешний CSS файл</li>
+							<li>
+								Универсальное правило
+								<code>*&#123; box-sizing:border-box; &#125;</code>
+							</li>
+							<li>
+								Аккуратные <code>padding</code>, <code>margin</code>,
+								<code>border-radius</code>, <code>box-shadow</code>
+							</li>
+							<li>Лаконичная палитра и базовая типографика</li>
+						</ul>
+					</div>
 					<div class="about__stats">
 						<div class="stat">
 							<div class="stat__number">20+</div>
@@ -149,6 +149,53 @@
 							<div class="stat__number">100+</div>
 							<div class="stat__label">адаптив</div>
 						</div>
+					</div>
+				</div>
+			</section>
+			<!--PRICING-->
+			<section class="section--alt" id="pricing">
+				<div class="container">
+					<header class="section__header">
+						<h2 class="section__title">Пример секции "Тарифы"</h2>
+						<p class="section__subtitle">
+							Часто на лендингах есть блок с тарифами или пакетами. Здесь ты
+							тренируешь карточки, сетку и состояние активной карточки.
+						</p>
+					</header>
+					<div class="pricing=grid">
+						<article class="pricing-card">
+							<h3 class="pricing-card__name">Старт</h3>
+							<p class="pricing-card__price">Бесплатно</p>
+							<ul class="pricing-card__list">
+								<li>Готовый макет</li>
+								<li>Чистый HTML +CSS</li>
+								<li>Базовый адаптив</li>
+							</ul>
+							<button class="btn btn--ghost">Выбрать</button>
+						</article>
+
+						<article class="pricing-card pricing-card--featured">
+							<div class="pricing-card--badge">Рекомендуем</div>
+							<h3 class="pricing-card__name">Практика</h3>
+							<p class="pricing-card__price">Твой код</p>
+							<ul class="pricing-card__list">
+								<li>Изучение и модификация макета</li>
+								<li>Эксперименты с flex b grid</li>
+								<li>Подготовка к своим проектам</li>
+							</ul>
+							<button class="btn btn--primary">Начать сейчас</button>
+						</article>
+
+						<article class="pricing-card">
+							<h3 class="pricing-card__name">"Эксперт"</h3>
+							<p class="pricing-card__price">Дальше сам</p>
+							<ul class="pricing-card__list">
+								<li>Усложнение макета</li>
+								<li>Добавление анимаций</li>
+								<li>Интеграция с JS-логикой</li>
+							</ul>
+							<button class="btn btn--ghost">Запланировать</button>
+						</article>
 					</div>
 				</div>
 			</section>
