@@ -472,7 +472,7 @@ body {
 .pricing-card--featured {
 	border-color: rgba(129, 140, 248, 0.9);
 	box-shadow: var(--shadow-soft);
-	transform: translate(-4px);
+	transform: translateY(-4px);
 }
 
 .pricing-card--badge {
