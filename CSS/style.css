@@ -210,6 +210,10 @@ body {
 	background: rgba(148, 163, 184, 0.12);
 }
 
+.btn--full {
+	width: 100%;
+}
+
 /* Список под hero */
 
 .hero__list {
@@ -508,4 +512,29 @@ body {
 	margin: 0;
 	font-size: 18px;
 	color: var(--text-accent);
+}
+
+/*========= CTA ========*/
+
+.cta {
+	display: grid;
+	grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+	gap: 24px;
+	align-items: center;
+}
+
+.field {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	margin-bottom: 10px;
+}
+
+field__input {
+	border-radius: 999px;
+	border: 1px solid rgba(148, 163, 184, 0.7);
+	background: rgba(15, 23, 42, 0.8);
+	padding: 8px 13px;
+	color: var(--text-main);
+	font-size: 14px;
 }
