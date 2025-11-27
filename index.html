@@ -15,11 +15,14 @@
 			<div class="container header__inner">
 				<div class="logo">Nova<span>Landing</span></div>
 				<nav class="nav">
-					<a href="#" class="nav__link">Возможности</a>
-					<a href="#" class="nav__link">О проекте</a>
-					<a href="#" class="nav__link">Тарифы</a>
-					<a href="#" class="nav__link nav__link--primary">Начать</a>
+					<a href="#features" class="nav__link">Возможности</a>
+					<a href="#about" class="nav__link">О проекте</a>
+					<a href="#pricing" class="nav__link">Тарифы</a>
+					<a href="#cta" class="nav__link nav__link--primary">Начать</a>
 				</nav>
+				<button class="burger" aria-label="Открыть меню">
+					<span></span><span></span><span></span>
+				</button>
 			</div>
 		</header>
 		<main>
@@ -36,8 +39,10 @@
 							аккуратная типографика и наглядная структура.
 						</p>
 						<div class="hero__actions">
-							<a href="#" class="btn btn--primary">Начать практику</a>
-							<a href="#" class="btn btn--ghost">Посмотреть структуру</a>
+							<a href="#cta" class="btn btn--primary">Начать практику</a>
+							<a href="#features" class="btn btn--ghost"
+								>Посмотреть структуру</a
+							>
 						</div>
 						<ul class="hero__list">
 							<li>Flexbox + Grid</li>
@@ -228,5 +233,19 @@
 				</div>
 			</section>
 		</main>
+		<footer class="container footer">
+			<div class="container footer__inner">
+				<p class="footer__copy">&#xA9; 2025 NovaLanding. Учебный проект CSS.</p>
+				<a href="#top" class="footer__link">Наверх |</a>
+			</div>
+		</footer>
+		<script>
+			const burger = document.querySelector('.burger')
+			const nav = document.querySelector('.nav')
+			burger.addEventListener('.click', () => {
+				burger.classList.toggle('burger--open')
+				nav.classList.toggle('nav--open')
+			})
+		</script>
 	</body>
 </html>
