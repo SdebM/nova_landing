@@ -538,3 +538,36 @@ field__input {
 	color: var(--text-main);
 	font-size: 14px;
 }
+.field__input::placeholder {
+	color: rgba(148, 163, 184, 0.9);
+}
+
+.field__input:focus {
+	outline: none;
+	border-color: #a5b4fc;
+	box-shadow: 0 0 0 1px rgba(129, 140, 248, 0.7);
+}
+
+/*========= FOOTER ========*/
+
+.footer {
+	border-top: 1px solid rgba(148, 163, 184, 0.2);
+	padding: 18px 0 26px;
+	background: rgba(2, 6, 23, 0.95);
+}
+.footer__inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	font-size: 13px;
+	color: var(--text-muted);
+}
+
+.footer__link {
+	color: var(--text-muted);
+	text-decoration: none;
+}
+.footer__link:hover {
+	color: var(--text-main);
+}
