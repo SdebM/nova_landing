@@ -20,6 +20,9 @@
 					<a href="#pricing" class="nav__link">Тарифы</a>
 					<a href="#cta" class="nav__link nav__link--primary">Начать</a>
 				</nav>
+				<button class="burger" aria-label="Открыть меню">
+					<span></span><span></span><span></span>
+				</button>
 			</div>
 		</header>
 		<main>
@@ -236,5 +239,13 @@
 				<a href="#top" class="footer__link">Наверх |</a>
 			</div>
 		</footer>
+		<script>
+			const burger = document.querySelector('.burger')
+			const nav = document.querySelector('.nav')
+			burger.addEventListener('.click', () => {
+				burger.classList.toggle('burger--open')
+				nav.classList.toggle('nav--open')
+			})
+		</script>
 	</body>
 </html>
